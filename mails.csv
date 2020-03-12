@@ -1,0 +1,523 @@
+﻿PortalName,HttpLink,CampaignName,ContentId,AppId,PortalId,Description,Title,Content,Id,LayoutContentId
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,EmailTemplate,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Email Template,,"<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN""    ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd""><html xmlns=""http://www.w3.org/1999/xhtml""><head><meta http-equiv=""content-type"" content=""text/html; charset=utf-8"" /><title>@ViewBag.Title</title></head><body style=""background-color:#dee9f4; font-size:12px; width:580px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:30px;"">	<table width=""580"" align=""center"" cellpadding=""0"" cellspacing=""0"" border=""0"" style=""margin-left:30px; margin-right:30px; background-color:dee9f4; width:580px; height:auto; border-collapse:collapse;"">		<!-- MAILING / TOP -->		<tr>			<td width=""580""><img src=""https://static.teqcycle.com/otb/samsung/mailings/Tablet/header.jpg"" width=""580"" alt="""" style=""border:0;"" /></td>		</tr>		<!-- MAILING / CONTENT -->		<tr>			<td width=""580"" style=""font-family:Arial, Helvetica, sans-serif; color:#4b4b4d;"">				<table width=""580"" cellpadding=""0"" cellspacing=""0"" border=""0"" style=""background-color:white; width:580px; height:auto; border-collapse:collapse;"">					<tr>						<td valign=""top"" width=""15""></td>						<td valign=""top"" width=""550"">												@RenderBody()																			</td>						<td valign=""top"" width=""15""></td><td>                        </td>					</tr>                    <tr>                        <td height=""10"" colspan=""3""></td>                    </tr>                    <tr>					</tr>                    <tr>                        <td valign=""top"" width=""15""></td>						<td valign=""top"" width=""550"" height=""30"" style=""border-bottom:1px solid black;"">						</td>						<td valign=""top"" width=""15""></td><td>                        </td>                    </tr>                    <tr>                        <td height=""30"" colspan=""3""></td>                    </tr>                    <tr>						<td valign=""top"" width=""15""></td>						<td valign=""top"" width=""550"">                        <p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#53565a; line-height: 14px;"">                            Sitz der Gesellschaft: Baierbrunner Str. 31, D-81379 M&uuml;nchen, HRB 202638 M&uuml;nchen<br>                            Managing Partners: Sebastian Neubeck, Dirk Ulrich                        </p>						</td>						<td valign=""top"" width=""15""></td><td>                        </td>					</tr>                    <tr>                        <td height=""30"" colspan=""3""></td>                    </tr>				</table>			</td>		</tr>	</table></body></html>",CF40D774-D363-4279-BC7F-BE10813C7BF9,NULL
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,ProcessUpdated,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Mail sent when process is updated,Wir haben Neuigkeiten zu Ihrem Verkauf [Vorgangs.-Nr.: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""font-family: Arial, Helvetica, sans-serif; font-size : 12px; color: #53565a;""><strong>Hallo @Model.Title @Model.LastName,<br><br></strong></p>
+
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+                            wir haben Neuigkeiten zu Ihrem Verkauf [Vorgangs.-Nr.: @Model.ProcessNumber].<br><br>
+
+							F&uuml;r mehr Informationen klicken Sie bitte hier: <a href=""@Model.StatusPageLink"">Ihre Statusseite</a>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+	<br /> 
+	Ihr Teqcycle Team
+	<br />
+	<br />
+	<img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle"" />
+</p>",7EFA8561-3B2E-4ADD-82BE-C9BBB2EDE6CA,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,InvoiceNoSuccess,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Mail sent when trade-in fails,"Trade-In nicht erfolgreich - Rückzahlung des Vorabzugs, Vorgangs-Nr. @Model.ProcessNumber","<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+vielen Dank für die Zusendung Ihres Altgerätes.
+<br />
+<br />
+Im Rahmen unserer Begutachtung mussten wir feststellen, dass das Gerät nicht den vorab mitgeteilten Angaben entspricht oder das eingeschickte Gerät von dem Gerät abweicht, das Sie zuvor im Samsung Online Shop angegeben hatten.
+<br />
+<br />
+Laut den <a href=""https://images.samsung.com/is/content/samsung/p5/de/mobile/trade-in/onlineshop-teilnahmebedingungen.pdf"" target=""_blank"">Teilnahmebedingungen der Trade-In Aktion</a> sind Sie dazu verpflichtet, den im Samsung Online-Shop gewährten Abzug an Samsung zurückzuzahlen.  
+<br />
+<br />
+Aus diesem Grund bitten wir Sie freundlich darum, den offenen Betrag innerhalb von 7 Tagen zu überweisen. Bitte nutzen Sie dafür die Rechnung im Anhang.
+<br />
+<br />
+Das Altgerät befindet sich bereits auf dem Weg zurück zu Ihnen. Der Rückversand ist für Sie kostenlos.
+<br />
+<br />
+Vielen Dank für Ihr Verständnis.
+<br/>
+</p>
+<br />
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>",A51F1395-9C43-4674-A192-CC9E8BF47089,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,InvoiceNoDevice,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Invoice mail when user does not send device,"Trade-In nicht erfolgreich - Rückzahlung des Vorabzugs, Vorgangs-Nr. @Model.ProcessNumber","<p style='margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;'>&nbsp;</p>
+<p style='font-family: Arial, Helvetica, sans-serif; font-size : 12px; color: #53565a;'><strong>Sehr geehrte/r @Model.Title @Model.LastName,<br /><br /></strong></p>
+
+<p style='margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;'>
+    leider konnten wir trotz unserer zweiten Erinnerung vor 7 Tagen keinen Eingang Ihres alten Smartphones verzeichnen.
+    <br /><br />
+    Daher müssen wir Ihnen mitteilen, dass Ihr Anspruch auf Ihre Altgeräteprämie damit verfallen ist.
+    <br /><br />
+    Laut den <a href='https://images.samsung.com/is/content/samsung/p5/de/mobile/trade-in/onlineshop-teilnahmebedingungen.pdf'>Teilnahmebedingungen der Trade-In Aktion</a> sind Sie dazu verpflichtet, den im Samsung Online-Shop gewährten Abzug an Samsung zurückzuzahlen, wenn Sie Ihr Altgerät nicht innerhalb von 14 Tagen nach Erhalt unserer Bestätigungsmail für den Verkauf an uns versandt haben.
+    <br /><br />
+    Wir bitten Sie freundlich darum, den offenen Betrag innerhalb von 7 Tagen zu überweisen. Bitte nutzen Sie dafür die Rechnung im Anhang.
+    <br /><br />
+    Vielen Dank für Ihr Verständnis.
+    <br /><br />
+</p>",87BAECB4-5002-465D-B6E4-F7C6D5BB61B7,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,PaymentTypeReminder,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Reminder to pay,Erinnerung an Verkauf Ihres Altgerätes [Vorgangs.-Nr.: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+wir freuen uns, dass Sie unseren Service nutzen und möchten den Vorgang zum Verkauf Ihres/Ihrer Mobiltelefon(e) gerne abschließen!
+<br />
+Bitte rufen Sie hierzu Ihre Statusseite auf und informieren Sie uns dort wie Sie weiter vorgehen möchten.
+<br />
+<br />
+Link zu Ihrer Statusseite<br /><a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+<br />
+</p>
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>",602EC213-7633-469F-AE40-63A1867D76BB,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,FirstReminder,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,First reminder to send device,Erinnerung an Versand Ihres Altgerätes [Vorgangs.-Nr.: @Model.ProcessNumber],"
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+wir freuen uns, dass Sie sich im Rahmen der Trade-In Aktion im Samsung Online Shop dazu entschieden haben Ihr Altger&auml;t an uns zu verkaufen.
+<br />
+<br />
+Leider konnten wir in den letzten 7 Tagen keinen Eingang Ihres alten Smartphones verzeichnen.<br />
+Kein Problem, in der Hektik des Alltags passiert das schon mal. 
+<br />
+<br />
+Damit wir Ihnen Ihre restliche Altger&auml;tpr&auml;mie &uuml;berweisen k&ouml;nnen, bitten wir Sie daher Ihr altes Handy innerhalb der n&auml;chsten 5 Werktage an uns zu schicken.
+<br />
+<br />
+Ihr Versandlabel und weiterf&uuml;hrende Versandhinweise finden Sie auf Ihrer Statusseite.
+<br />
+<br />
+Link zu Ihrer Statusseite<br /><a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+<br />
+</p>
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>
+",969D871B-3788-4D10-A4F5-640C7AC927CC,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,SecondReminder,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Second reminder to send device,Erinnerung an Versand Ihres Altgerätes [Vorgangs.-Nr.: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+Leider konnten wir trotz unserer ersten Erinnerung vor 5 Tagen keinen Eingang Ihres alten Smartphones verzeichnen. 
+<br />
+<br />
+Wir m&ouml;chten Ihnen trotzdem nochmal die Chance geben an der Trade-In Aktion teilzunehmen und geben Ihnen 5 Werktage mehr Zeit um Ihr Altger&auml;t an uns zu schicken. 
+<br />
+<br />
+Damit wir Ihnen Ihre restliche Altger&auml;tpr&auml;mie &uuml;berweisen k&ouml;nnen, bitten wir Sie daher Ihr altes Handy innerhalb der n&auml;chsten 5 Werktage an uns zu schicken.
+<br />
+<br />
+Ihr Versandlabel und weiterf&uuml;hrende Versandhinweise finden Sie auf Ihrer Statusseite.
+<br />
+<br />
+Link zu Ihrer Statusseite<br /><a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+<br />
+</p>
+<br />
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;""> 
+<strong>BITTE BEACHTEN SIE:</strong> Sollten wir innerhalb der n&auml;chsten 5 Tage kein Altger&auml;t von Ihnen erhalten, werden wir Ihren Vorgang an Samsung weiterleiten müssen. 
+Laut den <a href=""https://images.samsung.com/is/content/samsung/p5/de/mobile/trade-in/onlineshop-teilnahmebedingungen.pdf"">Teilnahmebedingungen der Trade-In Aktion</a> 
+im Samsung Online Shop [Punkt 3.3] sind Sie dazu verpflichtet, den Ihnen gewährten Vorabzug von 100€ an Samsung zurückzuzahlen, 
+wenn Sie Ihr Altger&auml;t nicht innerhalb von 14 Tagen nach Erhalt Ihres neuen Galaxy Modells an uns senden. 
+</p>
+<br />
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>",89D20BF3-EA2A-4AA1-9513-8A753DC61F42,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Tablet,ProcessCreated,A2AE9B04-5153-43FE-9A81-A1D15C16A20E,202631CC-4465-4771-A5E5-473FB24E9058,Email for starting process,Vielen Dank für die Teilnahme an dem Trade-In Service von Samsung [Vorgangsnummer: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""font-family: Arial, Helvetica, sans-serif; font-size : 12px; color: #53565a;""><strong>Hallo @Model.Title @Model.LastName,<br><br></strong></p>
+
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	vielen Dank für die Teilnahme an dem Trade-In Service von Samsung sowie Ihr Verkaufsangebot an Teqcycle.<br><br>
+	
+	Wir haben den Vorgang unter folgender Vorgangsnummer erfasst: @Model.ProcessNumber<br><br>
+	
+	Mit dieser E-Mail erhalten Sie den Link zu Ihrer persönlichen Statusseite, auf der sie den aktuellen Status einsehen, neue Angebote bearbeiten und verschiedene Dokumente (Versandlabel, Versandhinweise, Bewertungsgutachten, L&ouml;schbenachrichtigung) herunterladen k&ouml;nnen. 
+	<br>
+	<br>
+	Hier der Link zu Ihrer Statusseite
+	<br />
+	<a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+	<br />
+	<br />
+	<strong>So geht es weiter:</strong><br>
+	
+</p>
+	
+	<ul style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+		<li>Sie versenden Ihre Ger&auml;te an uns. Bitte beachten Sie dabei unsere Versandhinweise.</li>
+		<li style=""margin-top:10px;"">Wir best&auml;tigen Ihnen den Eingang Ihrer Ger&auml;te.</li>
+		<li style=""margin-top:10px;"">Wir bewerten Ihre Ger&auml;te und stellen Ihnen auf der Statusseite ein Bewertungsgutachten zur genauen Darstellung unserer Bewertung zum Download zur Verf&uuml;gung.</li>
+		<li style=""margin-top:10px;"">Nach erfolgreichem Abschluss des Vorgangs stellen wir Ihnen auf der Statusseite eine L&ouml;schbest&auml;tigung zum Download zur Verf&uuml;gung. Mit diesem Dokument best&auml;tigen wir Ihnen, dass alle Inhalte auf Ihren Ger&auml;ten nach dem neuesten Stand der Technik gel&ouml;scht wurden.</li>
+	</ul>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	Mit freundlichen Grüßen
+<br /> Ihr Teqcycle Team
+<br />
+<br />
+<img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle"" />
+</p>",6CDC8DCC-6385-4599-9384-90BD80D2F322,CF40D774-D363-4279-BC7F-BE10813C7BF9
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,EmailTemplate,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Email Template,,"
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN""
+    ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+
+<head>
+
+<meta http-equiv=""content-type"" content=""text/html; charset=utf-8"" />
+<title>@ViewBag.Title</title>
+
+</head>
+
+<body style=""background-color:#dee9f4; font-size:12px; width:580px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:30px;"">
+
+	<table width=""580"" align=""center"" cellpadding=""0"" cellspacing=""0"" border=""0"" style=""margin-left:30px; margin-right:30px; background-color:dee9f4; width:580px; height:auto; border-collapse:collapse;"">
+		<!-- MAILING / TOP -->
+		<tr>
+			<td width=""580""><img src=""https://static.teqcycle.com/otb/mailings/SAMSUNG_DE_INT/11.02.20_TradeIn_Visual_HQ_508x370.jpg"" width=""580"" alt="""" style=""border:0;"" /></td>
+		</tr>
+		<!-- MAILING / CONTENT -->
+		<tr>
+			<td width=""580"" style=""font-family:Arial, Helvetica, sans-serif; color:#4b4b4d;"">
+				<table width=""580"" cellpadding=""0"" cellspacing=""0"" border=""0"" style=""background-color:white; width:580px; height:auto; border-collapse:collapse;"">
+					<tr>
+						<td valign=""top"" width=""15""></td>
+						<td valign=""top"" width=""550"">
+						
+						@RenderBody()						
+						
+	
+						</td>
+						<td valign=""top"" width=""15""></td><td>
+                        </td>
+					</tr>
+                    <tr>
+                        <td height=""10"" colspan=""3""></td>
+                    </tr>
+                    <tr>
+					</tr>
+                    <tr>
+                        <td valign=""top"" width=""15""></td>
+						<td valign=""top"" width=""550"" height=""30"" style=""border-bottom:1px solid black;"">
+						</td>
+						<td valign=""top"" width=""15""></td><td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=""30"" colspan=""3""></td>
+                    </tr>
+                    <tr>
+						<td valign=""top"" width=""15""></td>
+						<td valign=""top"" width=""550"">
+                        <p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#53565a; line-height: 14px;"">
+                            Sitz der Gesellschaft: Baierbrunner Str. 31, D-81379 M&uuml;nchen, HRB 202638 M&uuml;nchen<br>
+                            Managing Partners: Sebastian Neubeck, Dirk Ulrich
+                        </p>
+						</td>
+						<td valign=""top"" width=""15""></td><td>
+                        </td>
+					</tr>
+                    <tr>
+                        <td height=""30"" colspan=""3""></td>
+                    </tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>",51BB8AF1-5DB4-4F53-8D1D-B28627D1499A,NULL
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,EmailTemplateVoucher,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Email Template Voucher,,"<!DOCTYPE html PUBLIC ""-//W3C//DTD HTML 4.01 Transitional//EN"" ""http://www.w3.org/TR/html4/loose.dtd""><html lang=""en""><head>    <meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"">    <meta name=""viewport"" content=""width=device-width, initial-scale=1"">    <!-- So that mobile will display zoomed in -->    <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">    <!-- enable media queries for windows phone 8 -->    <meta name=""format-detection"" content=""telephone=no"">    <!-- disable auto telephone linking in iOS -->    <title></title>    <style type=""text/css"">    body {        margin: 0;        margin: 0;        -ms-text-size-adjust: 100%;        -webkit-text-size-adjust: 100%;    }    table {        border-spacing: 0;        border: none;    }    table td {        border-collapse: collapse;    }        table, tr, td {    border: none;	}    .ExternalClass {        width: 100%;    }    .ExternalClass,    .ExternalClass p,    .ExternalClass p,    .ExternalClass font,    .ExternalClass td,    .ExternalClass div {        line-height: 100%;    }    .ReadMsgBody {        width: 100%;        background-color: #ebebeb;    }    table {        mso-table-lspace: 0pt;        mso-table-rspace: 0pt;    }    img {        -ms-interpolation-mode: bicubic;    }    .yshortcuts a {        border-bottom: none !important;    }    .divider {        background-color: #d6d6d6;        width: 100%;        height: 1px;        display: block;    }    .aapl-link {        text-decoration: none;    }    @media screen and (max-width: 599px) {        .force-row,        .container {            width: 100% !important;            max-width: 100% !important;            margin: 0 !important;        }    }    @media screen and (max-width: 400px) {        .container-margin {            margin-left: 12px !important;            margin-right: 12px !important;        }    }    .ios-footer a {        color: #aaaaaa !important;        text-decoration: underline;    }    .footnote{        font-size:10px    }    .headline{        font-size: 25px;        font-weight: bold;        color:#53565a;    }    .voucher{        font-size: 25px;        color:#53565a;    }    .blue-text{        font-size: 14px;    }    @media screen and (max-width: 599px) {        .col {            width: 100% !important;            margin-bottom: 0 !important;            padding-left: 12px;            padding-right: 12px !important;        }        .col2 {            width: 100% !important;            margin-bottom: 0 !important;            padding: 0! important;        }        .col2 img {            padding-left: 10px;        }        .hd_logo img {            padding-left: 5px;        }        .hd_hero {            width: 100% !important;            margin-bottom: 0 !important;        }        .hero-headline img {            width: 65% !important;            max-width: 65% !important;            height: auto !important;        }        .hd_hero img {            width: 100% !important;            max-width: 100% !important;            height: auto !important;        }        .hd_col2 {            width: 50% !important;            margin-bottom: 0 !important;            display: inline-block;            margin-top: 30px;        }        .hd_col2 img {            height: auto !important;        }        .hd_col1 {            width: 100% !important;            margin-bottom: 0 !important;        }        .hd_col1 img {            width: 100% !important;            margin-bottom: 0 !important;            max-width: 100% !important;            height: auto !important;        }        .cols-wrapper {            margin-top: 18px;        }        .img-wrapper {            height: auto !important;        }        .subtitle {            margin-top: 0 !important;        }        .content-wrapper {            padding-left: 15px !important;            padding-right: 15px !important;            padding-top: 15px;        }        .col-title {            padding-left: 15px;            padding-right: 15px;        }        .col-copy {            padding-left: 15px;            padding-right: 15px;            padding-top: 10px !important;        }        .aapl-footer {            padding-left: 15px;            padding-right: 15px;        }    }    @media screen and (max-width: 400px) {        .cols-wrapper {            padding-left: 0 !important;            padding-right: 0 !important;        }        .headline-content,        .title-content {            padding-left: 15px !important;            padding-right: 15px !important;        }    }        </style></head><body style=""margin:0; margin:0;"" bgcolor=""#fff"" leftmargin=""0"" topmargin=""0"" marginwidth=""0"" marginheight=""0"">    <!-- 100% background wrapper (grey background) -->    <table border=""0"" width=""100%"" height=""100%"" cellmargin=""0"" cellspacing=""0"" bgcolor=""#fff"">        <tr style=""vertical-align: bottom; border-color: white;"">            <td align=""center"" valign=""top"" bgcolor=""#fff"" style=""background-color: #fff;"">                <!-- 550px container (white background) -->                @RenderBody()            </td>        </tr>        <!--/100% background wrapper-->    </table></body></html>",39D6254A-19A5-48AE-97C1-E57462E9A1E8,NULL
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,InvoiceNoSuccess,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Mail sent when trade-in fails,"Trade-In nicht erfolgreich - Rückzahlung des Vorabzugs, Vorgangs-Nr. @Model.ProcessNumber","<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+vielen Dank für die Zusendung Ihres Altgerätes.
+<br />
+<br />
+Im Rahmen unserer Begutachtung mussten wir feststellen, dass das Gerät nicht den vorab mitgeteilten Angaben entspricht oder das eingeschickte Gerät von dem Gerät abweicht, das Sie zuvor im Samsung Online Shop angegeben hatten.
+<br />
+<br />
+Laut den <a href=""https://images.samsung.com/is/content/samsung/p5/de/mobile/trade-in/onlineshop-teilnahmebedingungen.pdf"" target=""_blank"">Teilnahmebedingungen der Trade-In Aktion</a> sind Sie dazu verpflichtet, den im Samsung Online-Shop gewährten Abzug an Samsung zurückzuzahlen.  
+<br />
+<br />
+Aus diesem Grund bitten wir Sie freundlich darum, den offenen Betrag innerhalb von 7 Tagen zu überweisen. Bitte nutzen Sie dafür die Rechnung im Anhang.
+<br />
+<br />
+Das Altgerät befindet sich bereits auf dem Weg zurück zu Ihnen. Der Rückversand ist für Sie kostenlos.
+<br />
+<br />
+Vielen Dank für Ihr Verständnis.
+<br/>
+</p>
+<br />
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>",B975E86D-2935-4C80-9ACA-E88F666950BB,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,PaymentTypeReminder,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Reminder to pay,Erinnerung an Verkauf Ihres Altgerätes [Vorgangs.-Nr.: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+wir freuen uns, dass Sie unseren Service nutzen und möchten den Vorgang zum Verkauf Ihres/Ihrer Mobiltelefon(e) gerne abschließen!
+<br />
+Bitte rufen Sie hierzu Ihre Statusseite auf und informieren Sie uns dort wie Sie weiter vorgehen möchten.
+<br />
+<br />
+Link zu Ihrer Statusseite<br /><a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+<br />
+</p>
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>",44A0EEB7-D4E8-4124-B379-24D7F1062803,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,ProcessUpdated,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Mail sent when process is updated,Wir haben Neuigkeiten zu Ihrem Verkauf [Vorgangs.-Nr.: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""font-family: Arial, Helvetica, sans-serif; font-size : 12px; color: #53565a;""><strong>Hallo @Model.Title @Model.LastName,<br><br></strong></p>
+
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+                            wir haben Neuigkeiten zu Ihrem Verkauf [Vorgangs.-Nr.: @Model.ProcessNumber].<br><br>
+
+							F&uuml;r mehr Informationen klicken Sie bitte hier: <a href=""@Model.StatusPageLink"">Ihre Statusseite</a>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+	<br /> 
+	Ihr Teqcycle Team
+	<br />
+	<br />
+	<img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle"" />
+</p>",4025F2B0-FF30-4A2B-90EF-B84E5FD2B3FC,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,InvoiceNoDevice,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Invoice mail when user does not send device,"Trade-In nicht erfolgreich - Rückzahlung des Vorabzugs, Vorgangs-Nr. @Model.ProcessNumber","<p style='margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;'>&nbsp;</p>
+<p style='font-family: Arial, Helvetica, sans-serif; font-size : 12px; color: #53565a;'><strong>Sehr geehrte/r @Model.Title @Model.LastName,<br /><br /></strong></p>
+
+<p style='margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;'>
+    leider konnten wir trotz unserer zweiten Erinnerung vor 7 Tagen keinen Eingang Ihres alten Smartphones verzeichnen.
+    <br /><br />
+    Daher müssen wir Ihnen mitteilen, dass Ihr Anspruch auf Ihre Altgeräteprämie damit verfallen ist.
+    <br /><br />
+    Laut den <a href='https://images.samsung.com/is/content/samsung/p5/de/mobile/trade-in/onlineshop-teilnahmebedingungen.pdf'>Teilnahmebedingungen der Trade-In Aktion</a> sind Sie dazu verpflichtet, den im Samsung Online-Shop gewährten Abzug an Samsung zurückzuzahlen, wenn Sie Ihr Altgerät nicht innerhalb von 14 Tagen nach Erhalt unserer Bestätigungsmail für den Verkauf an uns versandt haben.
+    <br /><br />
+    Wir bitten Sie freundlich darum, den offenen Betrag innerhalb von 7 Tagen zu überweisen. Bitte nutzen Sie dafür die Rechnung im Anhang.
+    <br /><br />
+    Vielen Dank für Ihr Verständnis.
+    <br /><br />
+</p>",82BC507F-22F8-496C-926A-C2329B2BFC0F,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,FirstReminder,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,First reminder to send device,Erinnerung an Versand Ihres Altgerätes [Vorgangs.-Nr.: @Model.ProcessNumber],"
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+wir freuen uns, dass Sie sich im Rahmen der Trade-In Aktion im Samsung Online Shop dazu entschieden haben Ihr Altger&auml;t an uns zu verkaufen.
+<br />
+<br />
+Leider konnten wir in den letzten 7 Tagen keinen Eingang Ihres alten Smartphones verzeichnen.<br />
+Kein Problem, in der Hektik des Alltags passiert das schon mal. 
+<br />
+<br />
+Damit wir Ihnen Ihre restliche Altger&auml;tpr&auml;mie &uuml;berweisen k&ouml;nnen, bitten wir Sie daher Ihr altes Handy innerhalb der n&auml;chsten 5 Werktage an uns zu schicken.
+<br />
+<br />
+Ihr Versandlabel und weiterf&uuml;hrende Versandhinweise finden Sie auf Ihrer Statusseite.
+<br />
+<br />
+Link zu Ihrer Statusseite<br /><a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+<br />
+</p>
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>
+",FD26F57D-CB1A-4181-BBA2-C56EDD43376B,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,SecondReminder,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Second reminder to send device,Erinnerung an Versand Ihres Altgerätes [Vorgangs.-Nr.: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+<strong>Sehr geehrte/r @Model.Title @Model.LastName,</strong>
+<br />
+<br />
+Leider konnten wir trotz unserer ersten Erinnerung vor 5 Tagen keinen Eingang Ihres alten Smartphones verzeichnen. 
+<br />
+<br />
+Wir m&ouml;chten Ihnen trotzdem nochmal die Chance geben an der Trade-In Aktion teilzunehmen und geben Ihnen 5 Werktage mehr Zeit um Ihr Altger&auml;t an uns zu schicken. 
+<br />
+<br />
+Damit wir Ihnen Ihre restliche Altger&auml;tpr&auml;mie &uuml;berweisen k&ouml;nnen, bitten wir Sie daher Ihr altes Handy innerhalb der n&auml;chsten 5 Werktage an uns zu schicken.
+<br />
+<br />
+Ihr Versandlabel und weiterf&uuml;hrende Versandhinweise finden Sie auf Ihrer Statusseite.
+<br />
+<br />
+Link zu Ihrer Statusseite<br /><a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+<br />
+</p>
+<br />
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;""> 
+<strong>BITTE BEACHTEN SIE:</strong> Sollten wir innerhalb der n&auml;chsten 5 Tage kein Altger&auml;t von Ihnen erhalten, werden wir Ihren Vorgang an Samsung weiterleiten müssen. 
+Laut den <a href=""https://images.samsung.com/is/content/samsung/p5/de/mobile/trade-in/onlineshop-teilnahmebedingungen.pdf"">Teilnahmebedingungen der Trade-In Aktion</a> 
+im Samsung Online Shop [Punkt 3.3] sind Sie dazu verpflichtet, den Ihnen gewährten Vorabzug von 100€ an Samsung zurückzuzahlen, 
+wenn Sie Ihr Altger&auml;t nicht innerhalb von 14 Tagen nach Erhalt Ihres neuen Galaxy Modells an uns senden. 
+</p>
+<br />
+<br />
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+    Mit freundlichen Grüßen
+    <br />
+    Ihr Teqcycle Team
+    <br />
+    <br />
+    <img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle""/>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>",3D971D49-2124-42E2-A803-D63DA535D44E,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,ProcessCreated,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Email for starting process,Vielen Dank für die Teilnahme an dem Trade-In Service von Samsung [Vorgangsnummer: @Model.ProcessNumber],"<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a;"">&nbsp;</p>
+<p style=""font-family: Arial, Helvetica, sans-serif; font-size : 12px; color: #53565a;""><strong>Hallo @Model.Title @Model.LastName,<br><br></strong></p>
+
+<p style=""margin-top:0; margin-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	vielen Dank für die Teilnahme an dem Trade-In Service von Samsung sowie Ihr Verkaufsangebot an Teqcycle.<br><br>
+	
+	Wir haben den Vorgang unter folgender Vorgangsnummer erfasst: @Model.ProcessNumber<br><br>
+	
+	Mit dieser E-Mail erhalten Sie den Link zu Ihrer persönlichen Statusseite, auf der sie den aktuellen Status einsehen, neue Angebote bearbeiten und verschiedene Dokumente (Versandlabel, Versandhinweise, Bewertungsgutachten, L&ouml;schbenachrichtigung) herunterladen k&ouml;nnen. 
+	<br>
+	<br>
+	Hier der Link zu Ihrer Statusseite
+	<br />
+	<a href=""@Model.StatusPageLink""> Ihre Statusseite </a>
+	<br />
+	<br />
+	<strong>So geht es weiter:</strong><br>
+	
+</p>
+	
+	<ul style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+		<li>Sie versenden Ihre Ger&auml;te an uns. Bitte beachten Sie dabei unsere Versandhinweise.</li>
+		<li style=""margin-top:10px;"">Wir best&auml;tigen Ihnen den Eingang Ihrer Ger&auml;te.</li>
+		<li style=""margin-top:10px;"">Wir bewerten Ihre Ger&auml;te und stellen Ihnen auf der Statusseite ein Bewertungsgutachten zur genauen Darstellung unserer Bewertung zum Download zur Verf&uuml;gung.</li>
+		<li style=""margin-top:10px;"">Nach erfolgreichem Abschluss des Vorgangs stellen wir Ihnen auf der Statusseite eine L&ouml;schbest&auml;tigung zum Download zur Verf&uuml;gung. Mit diesem Dokument best&auml;tigen wir Ihnen, dass alle Inhalte auf Ihren Ger&auml;ten nach dem neuesten Stand der Technik gel&ouml;scht wurden.</li>
+	</ul>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	So können Sie uns erreichen:<br>
+	Telefon: +49 (0) 61 96 – 77 55 512<br>
+	Email: <a href=""mailto:shop@samsung.de"">shop@samsung.de</a><br>
+	Servicezeiten: Montag-Freitag 09:00-18:00 Uhr (außer Feiertagen)<br>
+</p>
+<p style=""font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#53565a; line-height: 18px;"">
+	Mit freundlichen Grüßen
+<br /> Ihr Teqcycle Team
+<br />
+<br />
+<img src=""https://static.teqcycle.com/otb/mailings/teqcycle-mailfooter-logo.jpg"" alt=""Logo-Teqcycle"" />
+</p>",E556BE8D-1331-4C56-93BB-60E232B39F84,51BB8AF1-5DB4-4F53-8D1D-B28627D1499A
+SAM,https://tradein.teqcycle.com/samsung-estore/,Samsung Permanent Shop Integration,VoucherEmail,49A5FDD7-3405-4DC6-BE53-DFAA038D54F6,202631CC-4465-4771-A5E5-473FB24E9058,Voucher Code after sucessfull tradein,Dein 10% Zubehör-Gutschein,"<table border=""0""  width=""480px"" cellmargin=""0"" cellspacing=""0"" class=""container"" style=""width:550px; max-width:550px;background-color:#fff;"">                    <tr>                        <td  align=""center"" valign=""top"" height=""12px""  style=""background-color: white;"">&nbsp;</td>                    </tr>                    <tr>                        <td class=""content"" align=""center"" style=""background-color:#fff;"">                            <table  width=""480px"" border=""0"" cellmargin=""0"" cellspacing=""0"" bgcolor=""#fff"" cellpadding=""0"" class=""force-row"" style=""width: 550px; border:none;"">                                <tr>                                    <td align=""center"" valign=""top"" height=""20px""  style=""background-color: white;"">&nbsp;</td>                                </tr>                                <tr >                                    <td align=""center"" valign=""top"" style=""border:none;"">                                        <img src=""https://static.teqcycle.com/otb/mailings/SAMSUNG_DE_INT/11.02.20_TradeIn_Visual_HQ_508x370.jpg"" alt="""" border=""0"" style=""display:block;""  height=""370"" style=""max-width:100%;width:100%;"">                                    </td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""40px"" style=""background-color: white;"">&nbsp;</td>                                </tr>                                <tr>                                    <td class=""headline-content"" align=""center"" valign=""top"" style=""background-color:white;color:#53565a;font-family: Arial,Helvetica,Verdana,Lucida Grande,Lucida Sans,Lucida Sans Unicode,sans-serif; font-size:28px; font-weight:bold;line-height: 32px; "">                                        <p class=""headline"" style=""margin:0;color:#53565a;font-family: Arial,Helvetica,Verdana,Lucida Grande,Lucida Sans,Lucida Sans Unicode,sans-serif; font-size:28px; font-weight:bold;line-height: 32px;"" >                                        <strong style=""margin:0;color:#53565a;font-family: Arial,Helvetica,Verdana,Lucida Grande,Lucida Sans,Lucida Sans Unicode,sans-serif; font-size:28px; font-weight:bold;line-height: 32px;"">                                        Unser Dankeschön für&nbsp;deine <br>                                        Teilnahme am Samsung Trade&#8209;In&nbsp;Service!                                        <br>                                        Dein 10%&nbsp;Rabatt-Gutschein.*</strong></p>                                    </td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""30px"" style=""background-color: white;"">&nbsp;</td>                                </tr>                                <tr>                                    <td class=""content-wrapper"" align=""center"" valign=""top"" style=""font-family: Verdana,Lucida Grande,Lucida Sans,Lucida Sans Unicode,sans-serif;font-size:16px;font-weight:normal;line-height: 1.45em; background-color: white;"">                                        <p class=""blue-text"" style=""margin:0;font-size:16px;"">Als Dankeschön für die Teilnahme am&nbsp;Samsung&nbsp;Trade&#8209;In Service <br/>erhältst&nbsp;du&nbsp;einen 10% Rabatt&#8209;Gutschein, mit&nbsp;dem&nbsp;du&nbsp;dir&nbsp;passendes <br/>Zubehör für dein Galaxy&nbsp;aussuchen&nbsp;kannst.</p>                                    </td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""25px""  style=""background-color: white;"">&nbsp;</td>                                </tr>                                <tr>                                    <td class=""content-wrapper"" align=""center"" valign=""top"" style=""font-family: Verdana,Lucida Grande,Lucida Sans,Lucida Sans Unicode,sans-serif;font-size:16px;font-weight:normal;line-height: 1.45em; background-color: white;"">                                        <p class=""blue-text"" style=""margin:0;font-size:16px;"">Löse deinen Gutschein jetzt im Samsung&nbsp;Online&nbsp;Shop&nbsp;ein. <br>Viel Spaß mit deinem Galaxy und dem&nbsp;neuen&nbsp;Zubehör!</p>                                    </td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""25px""  style=""background-color: white;"">&nbsp;</td>                                </tr>                                 <tr>                                    <td class=""content-wrapper""  valign=""middle"" align=""center"" style=""background-color: white;"">                                        <a href=""https://www.samsung.com/de/offer/"">                                            <img src=""https://static.teqcycle.com/otb/mailings/SAMSUNG_DE_INT/samsung-btn.png"" alt="""" border=""0"" width=""186"" height=""46"">                                        </a>                                    </td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""25px""  style=""background-color: white;"">&nbsp;</td>                                </tr>                                <tr>                                    <td class=""content-wrapper"" align=""center"" valign=""top"" style=""background-color: white;font-family: Arial, Helvetica, sans-serif; font-size : 20px; color: #53565a; text-align: center;line-height: 27px;"">                                        <p class=""voucher"" style=""margin:0;font-family: Arial, Helvetica, sans-serif; font-size : 20px; color: #53565a; text-align: center;line-height: 27px;"">                                        <strong style=""margin:0;font-family: Arial, Helvetica, sans-serif; font-size : 20px; color: #53565a; text-align: center;line-height: 27px;"">                                            Dein persönlicher Gutscheincode&nbsp;lautet:<br/>                                            @Model.VoucherCode                                            </strong></p>                                    </td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""35px""  style=""background-color: white;"">&nbsp;</td>                                </tr>                                <tr>                                    <td align=""left"" valign=""top"" height=""1"" style=""background-color: #e2e2e2; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;""><!--[if gte mso 15]>&nbsp;<![endif]--></td>                                </tr>                                <tr>                                    <td align=""center"" valign=""top"" height=""10px"" style=""background-color: white;line-height: 10px;"">&nbsp;</td>                                </tr>                                <tr>                                    <td class=""content-wrapper"" align=""center"" valign=""top"" style=""background-color: white"">                                        <p class=""footnote"" style=""font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#53565a; line-height: 16px;margin:0"">                                            * Nur für private Endkunden ab 18 Jahren. Gutschein-Code über 10% Rabatt (i) nur im Samsung Online-Shop (<a href=""https://www.samsung.com/de/"">https://www.samsung.com/de/</a>) und                                             (ii) nur für Mobil Zubehörartikel aus der Kategorie ""Zubehör"" („Artikel“) (<a href=""https://www.samsung.com/de/mobile-accessories/"">https://www.samsung.com/de/mobile-accessories/</a>) einlösbar.                                             Um den Gutscheincode einzulösen, muss dieser im Warenkorb unter ""Gutscheincode"" eingegeben und bestätigt werden.                                             Der Rabatt wird vor dem Kauf unmittelbar vom Kaufpreis im Warenkorb abgezogen. Teilnahme mit max. 1 Artikel pro Gutschein-Code.                                             Der Gutschein ist nur einmal einlösbar und nicht mit anderen Gutscheinen oder Rabattaktionen kombinierbar.                                             Bei endgültiger Rückgabe des Artikels wird nur der rabattierte Kaufpreis erstattet. Keine Barauszahlung/keine Übertragung möglich.                                        </p>                                          </td>                                </tr>                            </table>                        </td>                    </tr>                    <tr>                        <td align=""center"" valign=""top"" height=""12px"">&nbsp;</td>                    </tr>                    <!--/550px container -->                </table>",9DDE2392-35FC-4F59-97D6-353CA0066488,39D6254A-19A5-48AE-97C1-E57462E9A1E8

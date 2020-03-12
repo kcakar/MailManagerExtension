@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class='result-container'>
+            <div class='approved qatest' style="padding:20px;">
+                <p><b>csv file:<input id="csv-upload" type='file' ></b></p>
+                <h3>How to use?<h3>
+                    <ol>
+                      <li>Go to db</li>
+                      <li>Execute below query<br>
+                        <ul>
+                            <li>
+                                <pre>
+SELECT TOP (1000) 
+    Portal.Name	as PortalName
+    ,Portal.HttpLink
+    ,Campaign.Name as CampaignName
+    ,Content.AppId
+    ,Portal.PortalId
+    ,[Description]
+    ,[Title]
+    ,ContentId
+    ,[Content]
+    ,Content.Id
+    ,[LayoutContentId]
+    ,Content.Id
+
+FROM [ContentManager].[dbo].[ContentItems] Content 
+FULL JOIN [TMA_HandyAnkauf_WebService].[dbo].[TradeInConfig] Config ON Content.AppId=Config.AppId
+FULL JOIN TMA_Teqport_Config.dbo.Portal Portal ON Portal.PortalId=Config.PortalId
+FULL JOIN TMA_HandyAnkauf_WebService.dbo.Campaign Campaign ON Config.CampaignId = Campaign.Id 
+WHERE Content IS NOT NULL
+ORDER BY Portal.Name,Content.LayoutContentId
+                                </pre>
+                            </li>
+                        </ul>
+                      </li>
+                      <li>Select all results, right click and save as CVS file</li>
+                      <li>Choose CVS file</li>
+                    </ol>
+            </div>
+        </div>
+        <script src="./mailizer.js" async defer></script>
+        <script src="./autocomplete.js" async defer></script>
+    </body>
+</html>
